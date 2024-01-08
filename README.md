@@ -1,0 +1,2 @@
+
+An intuitive browser-based calendar app designed for effortless scheduling within standard work hours (9am to 5pm). Users can easily add and save hourly events, with real-time HTML and CSS updates facilitated by jQuery.
