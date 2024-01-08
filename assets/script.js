@@ -8,8 +8,10 @@ function makeTimeBlocks() {
     for (let hour = 9; hour <= 17; hour++) {
         // create div for the timeblock. add "time-block"" class for later styling
         let timeBlock = $("<div>").addClass("time-block");
-        // create span for displaying hour. add "hour" class for styling.
-        let hourLabel = $("<span>").addClass("hour").text(`${hour}:00`);
+        // Use Day.js to format the hour in 12-hour format with AM/PM
+        let formattedHour = dayjs().hour(hour).format('h A');
+// create span for diplaying hour. add class "hour" for later styling
+        let hourLabel = $("<span>").addClass("hour").text(formattedHour);
         // create input field for the events. added class 'event-input'. sets attributes to handle text inputs. assigns unique ids
         let eventInput = $("<input>").addClass("event-input").attr("type", "text").attr("id", `event-${hour}`);
          // create a save button. add 'save-btn' class. set a data attribute to store the hour

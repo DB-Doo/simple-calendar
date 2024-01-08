@@ -4,10 +4,10 @@
 
 
 ## Link to application
-<!-- https://db-doo.github.io/coding-test/ -->
+https://db-doo.github.io/simple-calendar/
 
 ## Screenshot
-<!-- <img src="./assets/screenshot.png"/> -->
+<!-- <img src="./assets/screenshot.png"/> -->s
 
 ## Description
 
