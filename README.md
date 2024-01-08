@@ -7,7 +7,7 @@
 https://db-doo.github.io/simple-calendar/
 
 ## Screenshot
-<!-- <img src="./assets/screenshot.png"/> -->s
+<!-- <img src="./assets/screenshot.png"/> TO DO -->
 
 ## Description
 
