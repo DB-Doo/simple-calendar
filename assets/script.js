@@ -34,11 +34,24 @@ function makeTimeBlocks() {
       .addClass("save-btn")
       .attr("data-hour", hour)
       .text("Save");
+    // create clear button to quickly cleaer the input fields
+    let clearButton = $("<button>").addClass("clear-btn").text("X");
 
     //append this data to the timeblock
-    timeBlock.append(hourLabel, eventInput, saveButton);
+    timeBlock.append(hourLabel, eventInput, saveButton, clearButton);
     // append complete timeblock to the "planner" div in html
     $("#planner").append(timeBlock);
+
+// clear button functionaliity
+    clearButton.on("click", function () {
+      // find the sibling input field of the clicked clear button
+      let inputField = $(this).siblings(".event-input");
+      // clear any value of the input field
+      inputField.val("");
+      // also remove the item from localstorage
+      let hour = inputField.attr("id").split("-")[1];
+      localStorage.removeItem(`event-${hour}`);
+    });
 
     // load and display saved data in correct field if it exists
     let savedEvent = localStorage.getItem(`event-${hour}`);
@@ -57,5 +70,6 @@ function makeTimeBlocks() {
     });
   }
 }
+
 // call fuction to create initial timeblocks
 makeTimeBlocks();

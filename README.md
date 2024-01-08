@@ -7,7 +7,7 @@
 https://db-doo.github.io/simple-calendar/
 
 ## Screenshot
-<!-- <img src="./assets/screenshot.png"/> TO DO -->
+<img src="./assets/screenshot.png"/>
 
 ## Description
 
@@ -17,6 +17,4 @@ The Work Day Scheduler is a simple, browser-based calendar application that allo
 - **Daily Schedule**: Plan your workday with hourly time blocks from 9 AM to 5 PM.
 - **Persistent Storage**: Events are saved in the browser's local storage, ensuring that your schedule persists even after the browser is closed or reloaded.
 - **Real-Time Updates**: The app highlights past, current, and future hours using different colors for easy identification.
-<!-- TO DO -->
 - **Responsive Design**: Compatible with various devices and screen sizes.
-<!-- TO DO -->

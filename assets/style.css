@@ -1,3 +1,21 @@
+body {
+    background-color: #f4f4f4;
+    /* Light grey background */
+    font-family: 'Arial', sans-serif;
+}
+
+
+header {
+    text-align: center;
+}
+
+#currentDay {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* styles for past present and future dates */
 .past {
     background-color: lightgray;
 }
@@ -6,4 +24,49 @@
 }
 .future {
     background-color: lightblue;
+}
+
+
+
+
+.time-block {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.time-block:last-child {
+    border-bottom: none;
+    /* removes border for the last time block */
+}
+
+.event-input {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 10px;
+
+}
+
+.scheduler-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+@media (max-width: 600px) {
+    .scheduler-container {
+        padding: 10px;
+        /*padding for small screens*/
+    }
 }
